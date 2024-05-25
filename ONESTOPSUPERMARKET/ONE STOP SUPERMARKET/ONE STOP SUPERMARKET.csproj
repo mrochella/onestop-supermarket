@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E3BE20A-314C-4264-8FB1-43435C225A1A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ONE_STOP_SUPERMARKET</RootNamespace>
+    <AssemblyName>ONE STOP SUPERMARKET</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.28.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ALCOHOL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ALCOHOL.Designer.cs">
+      <DependentUpon>ALCOHOL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CART.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CART.Designer.cs">
+      <DependentUpon>CART.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CLEANERS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CLEANERS.Designer.cs">
+      <DependentUpon>CLEANERS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAIRY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DAIRY.Designer.cs">
+      <DependentUpon>DAIRY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAVOURITE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAVOURITE.Designer.cs">
+      <DependentUpon>FAVOURITE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRUIT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRUIT.Designer.cs">
+      <DependentUpon>FRUIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HISTORY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HISTORY.Designer.cs">
+      <DependentUpon>HISTORY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PAPERGOODS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PAPERGOODS.Designer.cs">
+      <DependentUpon>PAPERGOODS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONALCARE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PERSONALCARE.Designer.cs">
+      <DependentUpon>PERSONALCARE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PROSESPEMBAYARANcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PROSESPEMBAYARANcs.Designer.cs">
+      <DependentUpon>PROSESPEMBAYARANcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="services.cs" />
+    <Compile Include="Signin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signin.Designer.cs">
+      <DependentUpon>Signin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SNACK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SNACK.Designer.cs">
+      <DependentUpon>SNACK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SODA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SODA.Designer.cs">
+      <DependentUpon>SODA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MEATNFISH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEATNFISH.Designer.cs">
+      <DependentUpon>MEATNFISH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VEGETABLES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VEGETABLES.Designer.cs">
+      <DependentUpon>VEGETABLES.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ALCOHOL.resx">
+      <DependentUpon>ALCOHOL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CART.resx">
+      <DependentUpon>CART.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CLEANERS.resx">
+      <DependentUpon>CLEANERS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DAIRY.resx">
+      <DependentUpon>DAIRY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAVOURITE.resx">
+      <DependentUpon>FAVOURITE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRUIT.resx">
+      <DependentUpon>FRUIT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HISTORY.resx">
+      <DependentUpon>HISTORY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PAPERGOODS.resx">
+      <DependentUpon>PAPERGOODS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONALCARE.resx">
+      <DependentUpon>PERSONALCARE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PROSESPEMBAYARANcs.resx">
+      <DependentUpon>PROSESPEMBAYARANcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signin.resx">
+      <DependentUpon>Signin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SNACK.resx">
+      <DependentUpon>SNACK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SODA.resx">
+      <DependentUpon>SODA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEATNFISH.resx">
+      <DependentUpon>MEATNFISH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VEGETABLES.resx">
+      <DependentUpon>VEGETABLES.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Screenshot 2023-05-05 184814.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\image-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\7e438165016009db7e401d7373c4e2b4-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\8f79d824d93cccf9bd3917ba5451829a-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_onestop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S__15130666.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S__15130666 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S__15130666 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S__15130667 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S__15130668 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S__15130669 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S__15130670 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S__15130672 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S__15130671 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S__15130673 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S__15130674 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S__15130675 %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S__15130676 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S__15130677 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIGNIN1 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGIN.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
